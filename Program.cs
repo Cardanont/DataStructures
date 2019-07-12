@@ -6,7 +6,13 @@ namespace DataStructures
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            ArrayPractices arrayPractices = new ArrayPractices();
+
+            string normal = "Hi My name is Cardanont";
+
+            arrayPractices.ReverseString(normal);
+
         }
     }
 }

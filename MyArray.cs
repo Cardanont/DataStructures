@@ -6,9 +6,25 @@ namespace DataStructures
 {
     class MyArray
     {
-        MyArray(int length, object[] data)
+        public int Length { get; set; }
+        public List<string> StringData { get; set; }
+
+        public MyArray()
         {
-            length = 0;
+            Length = 0;
+            StringData = new List<string>();
+        }
+
+        public string Get(int index)
+        {
+            return StringData[index];
+        }
+
+        public int Push(string item)
+        {
+            StringData[Length] = item;
+            Length++;
+            return Length;
         }
     }
 }
