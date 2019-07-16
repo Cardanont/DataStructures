@@ -15,7 +15,7 @@ namespace DataStructures
 
             if (string.IsNullOrEmpty(normal) || normal.Length < 2 ||  normal.GetType() != typeof(string))
             {
-                Console.WriteLine("I'm expecting a string not that idiot!");
+                Console.WriteLine("Hmmm something is not good my friend");
             }
 
             string[] splited = normal.Split();
