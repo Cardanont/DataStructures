@@ -16,6 +16,9 @@ function mergeSoredArrays(array1, array2) {
         return array1;
     }
 
+    // Probably no t the best solution should add a function for adding 
+    // the values for each array
+
     while (array1Item || array2Item) {
         if (!array2Item || array1Item < array2Item) {
             mergedArray.push(array1Item);
@@ -30,6 +33,8 @@ function mergeSoredArrays(array1, array2) {
 
     return mergedArray;
 }
+
+
 
 
 mergeSoredArrays([0,3,4,31],[4,6,30]);
